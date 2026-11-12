@@ -1,0 +1,20 @@
+ <div class="card">
+      <h2>💻 关于</h2>
+      <p>这是一个完全可以自己修改的网站。</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 My Website
+  </footer>
+
+  <script>
+    function startWebsite() {
+      document.getElementById("message").innerHTML =
+        "🎉 网站已经成功运行！";
+    }
+  </script>
+
+</body>
+</html>
