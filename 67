@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Website</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #111827, #312e81, #000);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    nav {
+      width: 100%;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(10px);
+      position: fixed;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #60a5fa;
+    }
+
+    nav button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    nav button:hover {
+      background: #3b82f6;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    h1 {
+      font-size: clamp(45px, 8vw, 100px);
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #60a5fa, #c084fc, #f472b6);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 600px;
+      color: #d1d5db;
+      line-height: 1.7;
+    }
+
+    .start-btn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      font-size: 20px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #2563eb, #7c3aed);
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .start-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .cards {
+      padding: 80px 8%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 30px;
+      border-radius: 20px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.13);
+    }
+
+    .card h2 {
+      margin-bottom: 15px;
+      color: #93c5fd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: #9ca3af;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #86efac;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">MY WEBSITE</div>
+    <button onclick="alert('Welcome to my website!')">Menu</button>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+
+    <p>
+      This is a website created using HTML, CSS, and JavaScript.
+      You can deploy it for free using GitHub Pages!
+    </p>
+
+    <button class="start-btn" onclick="startWebsite()">
+      Start Exploring
+    </button>
+
+    <div id="message"></div>
+  </section>
+
+  <section class="cards">
+
+    <div class="card">
+      <h2>🎮 Games</h2>
+      <p>You can add your HTML games here in the future.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Projects</h2>
+      <p>Showcase the different projects you have created.</p>
+    </div>
+
+    <div class="card">
+      <h2>💻 About</h2>
+      <p>This is a website that you can completely customize.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 My Website
+  </footer>
+
+  <script>
+    function startWebsite() {
+      document.getElementById("message").innerHTML =
+        "🎉 The website is now running successfully!";
+    }
+  </script>
+
+</body>
+</html>
