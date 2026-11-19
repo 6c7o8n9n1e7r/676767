@@ -1,56 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio - Home</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; text-align: center; background-color: #f9f9f9; }
-    /* Navigation Bar */
-    nav { background: #333; padding: 15px; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    nav a:hover { color: #ffcc00; }
-    /* Welcoming Banner */
-    .banner { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; padding: 50px 20px; }
-    .banner h1 { margin: 0; font-size: 36px; }
-    /* Click Animation Styles */
-    .interactive-box { margin: 40px auto; }
-    #pic { width: 200px; cursor: pointer; transition: transform 0.2s, opacity 0.2s; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-    #pic:active { transform: scale(0.85); }
-  </style>
+  <title>My Homepage</title>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
+  <center>
+    <!-- Navigation -->
+    <a href="index.html">Home</a> | 
+    <a href="portfolio.html">Portfolio</a> | 
     <a href="about.html">About Me</a>
-  </nav>
+    <hr>
 
-  <!-- Welcoming Banner -->
-  <div class="banner">
-    <h1>Welcome to My Website!</h1>
-    <p>Explore my projects, learn more about me, and have fun.</p>
-  </div>
+    <!-- Simple Banner -->
+    <div style="background-color: lightblue; padding: 20px;">
+      <h1>Welcome to My Website!</h1>
+      <p>Hi! This is my personal homepage.</p>
+    </div>
 
-  <!-- Interactive Image (Click 6 to switch to 7) -->
-  <div class="interactive-box">
-    <h3>Click the number below!</h3>
-    <img id="pic" src="6.png" alt="Interactive Number" onclick="toggle()">
-  </div>
-
-  <script>
-    let isSix = true;
-    function toggle() {
-      const img = document.getElementById('pic');
-      img.style.opacity = 0;
-      setTimeout(() => {
-        isSix = !isSix;
-        img.src = isSix ? '6.png' : '7.png';
-        img.style.opacity = 1;
-      }, 150);
-    }
-  </script>
-
+    <!-- Click 6 to switch to 7 -->
+    <h3>Click the 6 below:</h3>
+    <img src="6.png" width="150" onclick="this.src = this.src.includes('6.png') ? '7.png' : '6.png'">
+  </center>
 </body>
 </html>
