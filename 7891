@@ -1,20 +1,78 @@
- <div class="card">
-      <h2>💻 关于</h2>
-      <p>这是一个完全可以自己修改的网站。</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Me</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; line-height: 1.6; }
+    nav { background: #333; padding: 15px; text-align: center; }
+    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+    .container { max-width: 700px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .gallery img { width: 120px; margin-right: 15px; border: 2px solid #ddd; border-radius: 5px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+    th { background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation (Hyperlinks) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About Me</a>
+  </nav>
+
+  <div class="container">
+    <h1>About Me</h1>
+    <p>Hi! Welcome to my personal profile page. Check out my work on <a href="https://github.com" target="_blank">GitHub</a>.</p>
+
+    <!-- 1. Minimum of 2 pictures, with 1 hyperlinked image -->
+    <h3>My Pictures (Click the 7 to go Home!)</h3>
+    <div class="gallery">
+      <img src="6.png" alt="Number 6">
+      <a href="index.html" title="Click to return Home">
+        <img src="7.png" alt="Hyperlinked Number 7">
+      </a>
     </div>
 
-  </section>
+    <!-- 2. Interests & Hobbies (Unordered List) -->
+    <h3>Interests & Hobbies</h3>
+    <ul>
+      <li>Web Design & Coding</li>
+      <li>Gaming & Technology</li>
+      <li>Photography & Music</li>
+    </ul>
 
-  <footer>
-    © 2026 My Website
-  </footer>
+    <!-- 3. Places Visited (Ordered List) -->
+    <h3>Places Visited</h3>
+    <ol>
+      <li>Toronto, Canada</li>
+      <li>Vancouver, Canada</li>
+      <li>New York, USA</li>
+    </ol>
 
-  <script>
-    function startWebsite() {
-      document.getElementById("message").innerHTML =
-        "🎉 网站已经成功运行！";
-    }
-  </script>
+    <!-- 4. Information Table -->
+    <h3>My Info Table</h3>
+    <table>
+      <tr>
+        <th>Category</th>
+        <th>Details</th>
+      </tr>
+      <tr>
+        <td>Favorite Subject</td>
+        <td>Computer Science / HTML</td>
+      </tr>
+      <tr>
+        <td>Skills</td>
+        <td>HTML, CSS, Basic JavaScript</td>
+      </tr>
+      <tr>
+        <td>Current Goal</td>
+        <td>Build an awesome personal portfolio</td>
+      </tr>
+    </table>
+  </div>
 
 </body>
 </html>
