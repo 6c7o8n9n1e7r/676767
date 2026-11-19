@@ -1,78 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>About Me</title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; background-color: #f9f9f9; line-height: 1.6; }
-    nav { background: #333; padding: 15px; text-align: center; }
-    nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
-    .container { max-width: 700px; margin: 30px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-    .gallery img { width: 120px; margin-right: 15px; border: 2px solid #ddd; border-radius: 5px; }
-    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
-    th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
-    th { background-color: #f2f2f2; }
-  </style>
 </head>
 <body>
+  <!-- Navigation Links -->
+  <a href="index.html">Home</a> | 
+  <a href="portfolio.html">Portfolio</a> | 
+  <a href="about.html">About Me</a>
+  <hr>
 
-  <!-- Navigation (Hyperlinks) -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About Me</a>
-  </nav>
+  <h1>About Me</h1>
+  <p>Hello! Here is some information about myself.</p>
 
-  <div class="container">
-    <h1>About Me</h1>
-    <p>Hi! Welcome to my personal profile page. Check out my work on <a href="https://github.com" target="_blank">GitHub</a>.</p>
+  <!-- 1. At least 2 pictures, with 1 hyperlinked image -->
+  <h3>My Pictures (Click 7 to go Home)</h3>
+  <img src="6.png" width="100">
+  <a href="index.html">
+    <img src="7.png" width="100">
+  </a>
 
-    <!-- 1. Minimum of 2 pictures, with 1 hyperlinked image -->
-    <h3>My Pictures (Click the 7 to go Home!)</h3>
-    <div class="gallery">
-      <img src="6.png" alt="Number 6">
-      <a href="index.html" title="Click to return Home">
-        <img src="7.png" alt="Hyperlinked Number 7">
-      </a>
-    </div>
+  <!-- 2. At least 2 hyperlinks -->
+  <h3>My Favorite Links</h3>
+  <p>Visit <a href="https://github.com">GitHub</a> or go back to <a href="index.html">My Homepage</a>.</p>
 
-    <!-- 2. Interests & Hobbies (Unordered List) -->
-    <h3>Interests & Hobbies</h3>
-    <ul>
-      <li>Web Design & Coding</li>
-      <li>Gaming & Technology</li>
-      <li>Photography & Music</li>
-    </ul>
+  <!-- 3. Interests & Hobbies (Unordered List) -->
+  <h3>My Interests and Hobbies</h3>
+  <ul>
+    <li>Playing video games</li>
+    <li>Listening to music</li>
+    <li>Coding</li>
+  </ul>
 
-    <!-- 3. Places Visited (Ordered List) -->
-    <h3>Places Visited</h3>
-    <ol>
-      <li>Toronto, Canada</li>
-      <li>Vancouver, Canada</li>
-      <li>New York, USA</li>
-    </ol>
+  <!-- 4. Places Visited (Ordered List) -->
+  <h3>Places I Have Visited</h3>
+  <ol>
+    <li>Toronto</li>
+    <li>Vancouver</li>
+    <li>New York</li>
+  </ol>
 
-    <!-- 4. Information Table -->
-    <h3>My Info Table</h3>
-    <table>
-      <tr>
-        <th>Category</th>
-        <th>Details</th>
-      </tr>
-      <tr>
-        <td>Favorite Subject</td>
-        <td>Computer Science / HTML</td>
-      </tr>
-      <tr>
-        <td>Skills</td>
-        <td>HTML, CSS, Basic JavaScript</td>
-      </tr>
-      <tr>
-        <td>Current Goal</td>
-        <td>Build an awesome personal portfolio</td>
-      </tr>
-    </table>
-  </div>
-
+  <!-- 5. Information Table -->
+  <h3>About Me Table</h3>
+  <table border="1">
+    <tr>
+      <th>Question</th>
+      <th>Answer</th>
+    </tr>
+    <tr>
+      <td>Favorite Food</td>
+      <td>Pizza</td>
+    </tr>
+    <tr>
+      <td>Favorite Color</td>
+      <td>Blue</td>
+    </tr>
+  </table>
 </body>
 </html>
